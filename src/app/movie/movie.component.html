@@ -1,0 +1,9 @@
+<button (click)="getToken()">TOKEN</button>
+<button (click)="getID()">ID</button>
+<button (click)="showWatchList()">WatchList</button>
+
+<div class="productElem" *ngFor="let movie of movies" >
+    <h1>{{movie.title}}</h1>
+    <p>Цена: {{movie.overview}}</p>
+    <img src="{{'https://image.tmdb.org/t/p/w500' + movie.poster_path}}"/>
+</div>
