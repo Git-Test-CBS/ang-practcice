@@ -16,7 +16,7 @@ export class MovieComponent implements OnInit {
   constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
-    this.dataService.getMovies().subscribe(res=>{console.log(res); this.movies = res.myresults})
+    this.dataService.getMovies().subscribe(res=>{console.log(res); this.movies = res.results})
     this.dataService.addToWatchList().subscribe(res=>console.log(res))
   }
 

@@ -1,7 +1,7 @@
 export interface MovieRes {
     dates:{maximum:string, minimum:string}
     page:number;
-    myresults:[];
+    results:[];
     total_pages:number;
     total_results:number;
 }
